@@ -121,7 +121,7 @@ def polarizador():
     R2 = int(input("Escribe el valor de la resistencia R2: "))
     RE = int(input("Escribe el valor de la resistencia de emisor: "))
     RC = int(input("Escribe el valor de la resistencia de colector: "))
-    VCC = int(input("Escribe el valor de la tensión de alimentación: "))
+    VCC = float(input("Escribe el valor de la tensión de alimentación: "))
     VBB = (R2/(R1+R2))*VCC
     VE = VBB-0.7
     IE = VE / RE
